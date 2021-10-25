@@ -1,0 +1,6 @@
+.acc-item-content {
+  padding: 0px 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}

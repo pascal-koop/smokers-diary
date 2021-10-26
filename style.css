@@ -8,7 +8,7 @@
   /* 'background' */
   --background-clr: rgba(255, 255, 255, 0.2);
   /*backdropfilter*/
-  --backdrop: blur(40px);
+  --backdrop: blur(10px);
   /*border*/
   --border: solid 1px transparent;
   /*background-clip*/
@@ -58,7 +58,7 @@ form span {
   align-items: flex-start;
   flex-direction: column;
   justify-content: space-around;
-  height: 26rem;
+  height: 28rem;
   margin: 1rem auto;
   width: 19rem;
   padding-left: 1rem;
@@ -122,7 +122,7 @@ li {
   border-radius: 5px;
   backdrop-filter: var(--backdrop);
   -webkit-backdrop-filter: blur(40px);
-  border: var(--border);
+
   box-shadow: var(--box-shadow);
   background-clip: var(--background-clip);
 }
@@ -147,11 +147,19 @@ button.glass::after {
   float: right;
 }
 
+button h4 {
+  display: inline-block;
+}
+
 .info {
   font-size: 0.8rem;
-  min-height: 20rem;
+  min-height: 18rem;
   min-width: 17.4rem;
-  margin: 0 0.3rem;
+  margin: 0.5rem 0.3rem;
+}
+.info h3 {
+  font-size: 1.2rem;
+  padding-bottom: 0.5rem;
 }
 
 hr {

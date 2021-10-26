@@ -25,8 +25,9 @@ body {
 
 .callender {
   position: absolute;
-  top: 389px;
-  right: 17px;
+  top: 294px;
+  right: -53px;
+  backdrop-filter: 0px;
 }
 
 main {

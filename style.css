@@ -5,22 +5,15 @@
   margin: 0;
 }
 :root {
-  --glass-boarder-rds: 7px;
-  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  --blur: blur(2.8px);
-  --glass-border: 1px solid;
-  --border-image: linear-gradient(
-    114.57deg,
-    rgba(249, 249, 249, 0.37) 10.15%,
-    rgba(254, 254, 254, 0.123906) 80.87%,
-    rgba(255, 255, 255, 0.041) 96.09%
-  );
-
-  --glass-background: linear-gradient(
-    114.57deg,
-    rgba(239, 239, 239, 0.25) 4.32%,
-    rgba(239, 239, 239, 0.1) 98.87%
-  );
+  /* 'background' */
+  --background-clr: rgba(255, 255, 255, 0.2);
+  /*backdropfilter*/
+  --backdrop: blur(40px);
+  /*border*/
+  --border: solid 1px transparent;
+  /*background-clip*/
+  --background-clip: padding-box;
+  --box-shadow: 10px 10px 10px rgba(46, 54, 68, 0.03);
 }
 body {
   font-family: "Raleway", sans-serif;
@@ -43,13 +36,13 @@ form span {
   margin: 0 auto;
   height: 50px;
   width: 349px;
-  background: var(--glass-background);
-  border-radius: var(--glass-boarder-rds);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: blur(2.8px);
-  border: var(--glass-border);
-  border-image-source: var(--border-image);
+  background: var(--background-clr);
+  border-radius: 14px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
 }
 
 .glass-form {
@@ -61,13 +54,14 @@ form span {
   margin: 1rem auto;
   width: 19rem;
   padding-left: 1rem;
-  background: var(--glass-background);
-  border-radius: var(--glass-boarder-rds);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: blur(2.8px);
-  border: var(--glass-border);
-  border-image-source: var(--border-image);
+
+  background: var(--background-clr);
+  border-radius: 20px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
 }
 form {
   display: flex;
@@ -76,7 +70,7 @@ form {
   font-size: 1rem;
 }
 input#apply {
-  margin-top: 2rem;
+  margin-top: 1rem;
   padding: 0.2em 2em;
   font-size: 0.9rem;
   background: linear-gradient(
@@ -84,21 +78,24 @@ input#apply {
     rgba(0, 231, 51, 0.51) 2.63%,
     rgba(239, 239, 239, 0.1) 95.54%
   );
+  border-right: 2px;
+  border-left: 1px;
 }
 label {
   padding: 0.5rem 0 0.5rem 0;
 }
 
 input {
-  background: var(--glass-background);
-  border-radius: 0.3em;
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: blur(2.8px);
-  border: var(--glass-border);
-  border-image-source: var(--border-image);
+  background: var(--background-clr);
+  border-radius: 5px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
   outline: none;
   color: #ffffff;
+  padding: 0.2em;
 }
 
 #accordion {
@@ -112,13 +109,13 @@ li {
 .accordion-content {
   display: flex;
   margin: 0.5rem auto 0.7rem;
-  background: var(--glass-background);
-  border-radius: var(--glass-boarder-rds);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: blur(2.8px);
-  border: var(--glass-border);
-  border-image-source: var(--border-image);
+  background: var(--background-clr);
+  border-radius: 5px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
 }
 button.glass {
   font-size: 1.1rem;
@@ -126,13 +123,13 @@ button.glass {
   color: #ffffff;
   padding: 1rem;
   text-align: left;
-  background: var(--glass-background);
-  border-radius: var(--glass-boarder-rds);
-  box-shadow: var(--glass-shadow);
-  backdrop-filter: var(--blur);
-  -webkit-backdrop-filter: blur(2.8px);
-  border: var(--glass-border);
-  border-image-source: var(--border-image);
+  background: var(--background-clr);
+  border-radius: 5px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
 }
 button.glass::after {
   content: url(./assets/acccordion-item.png);

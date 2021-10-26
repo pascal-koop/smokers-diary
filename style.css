@@ -1,3 +1,72 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap");
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+:root {
+  --glass-boarder-rds: 7px;
+  --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  --blur: blur(2.8px);
+  --glass-border: 1px solid;
+  --border-image: linear-gradient(
+    114.57deg,
+    rgba(249, 249, 249, 0.37) 10.15%,
+    rgba(254, 254, 254, 0.123906) 80.87%,
+    rgba(255, 255, 255, 0.1) 96.09%
+  );
+
+  --glass-background: linear-gradient(
+    114.57deg,
+    rgba(239, 239, 239, 0.25) 4.32%,
+    rgba(239, 239, 239, 0.1) 98.87%
+  );
+}
+body {
+  font-family: "Raleway", sans-serif;
+  color: #ffffff;
+  background-image: url("assets/Background Waves.png");
+  background-repeat: repeat-y;
+  margin: 1rem 0;
+}
+form span {
+  font-size: 0.7rem;
+}
+.title {
+  z-index: 6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  height: 50px;
+  width: 349px;
+  background: var(--glass-background);
+  border-radius: var(--glass-boarder-rds);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: var(--glass-border);
+  border-image-source: var(--border-image);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto 0;
+}
+.glass-form {
+  height: 26rem;
+  margin: 1rem auto;
+  width: 19rem;
+  padding-left: 1rem;
+  background: var(--glass-background);
+  border-radius: var(--glass-boarder-rds);
+  box-shadow: var(--glass-shadow);
+  backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: blur(2.8px);
+  border: var(--glass-border);
+  border-image-source: var(--border-image);
+}
 .acc-item-content {
   padding: 0px 10px;
   max-height: 0;

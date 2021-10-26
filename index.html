@@ -19,19 +19,19 @@
       <div class="glass-form">
         <form>
           <label for="date">what time is it?</label>
-          <input type="text" name="date" id="date" />
+          <input type="datetime-local" name="date" id="date" />
           <label for="situation">what kind of situation you are in?</label>
           <input type="text" name="situation" id="situation" />
           <label for="mood">how's your mood?<span>1 - 10(best)</span></label
-          ><input type="number" name="mood" id="mood" />
+          ><input type="number" name="mood" id="mood" min="1" max="10" />
           <label for="special">anything special?</label>
           <input type="text" name="special" id="special" />
           <label for="expectations">expectations?</label>
           <input type="text" name="expectations" id="expectations" />
           <label for="fulfillt">expectations fulfillt?</label>
           <input type="text" name="fulfillt" id="fulfillt" />
-          <label for="apply">apply</label>
-          <input type="submit" name="apply" id="apply" />
+
+          <input type="submit" name="apply" id="apply" value="apply" />
         </form>
       </div>
     </main>
@@ -43,15 +43,22 @@
           aria-expanded="false"
           id="accordion-control-1"
         >
-          Datum
+          monday/23/11/21
         </button>
 
-        <div class="acc-item-content glass" aria-hidden="true" id="content-1">
+        <div
+          class="acc-item-content accordion-content"
+          aria-hidden="true"
+          id="content-1"
+        >
           <div class="info">
-            <h3>Time</h3>
-            <p>dfd</p>
-            <p>dfd</p>
-            <p>dfd</p>
+            <h3>12:23</h3>
+            <p>Situation</p>
+            <p>Mood</p>
+            <p>special?</p>
+            <p>expectations?</p>
+            <p>fulfillt?</p>
+            <hr />
           </div>
         </div>
         <button
@@ -60,15 +67,21 @@
           aria-expanded="false"
           id="accordion-control-1"
         >
-          Datum
+          monday/23/11/21
         </button>
 
-        <div class="acc-item-content glass" aria-hidden="true" id="content-1">
+        <div
+          class="acc-item-content accordion-content"
+          aria-hidden="true"
+          id="content-1"
+        >
           <div class="info">
-            <h3>Time</h3>
-            <p>dfd</p>
-            <p>dfd</p>
-            <p>dfd</p>
+            <h3>12:23</h3>
+            <p>Situation</p>
+            <p>Mood</p>
+            <p>special?</p>
+            <p>expectations?</p>
+            <p>fulfillt?</p>
           </div>
         </div>
         <button
@@ -77,15 +90,44 @@
           aria-expanded="false"
           id="accordion-control-1"
         >
-          Datum
+          monday/23/11/21
         </button>
 
-        <div class="acc-item-content glass" aria-hidden="true" id="content-1">
+        <div
+          class="acc-item-content accordion-content"
+          aria-hidden="true"
+          id="content-1"
+        >
           <div class="info">
-            <h3>Time</h3>
-            <p>dfd</p>
-            <p>dfd</p>
-            <p>dfd</p>
+            <h3>12:23</h3>
+            <p>Situation</p>
+            <p>Mood</p>
+            <p>special?</p>
+            <p>expectations?</p>
+            <p>fulfillt?</p>
+          </div>
+        </div>
+        <button
+          class="glass"
+          aria-controls="content-1"
+          aria-expanded="false"
+          id="accordion-control-1"
+        >
+          monday/23/11/21
+        </button>
+
+        <div
+          class="acc-item-content accordion-content"
+          aria-hidden="true"
+          id="content-1"
+        >
+          <div class="info">
+            <h3>12:23</h3>
+            <p>Situation</p>
+            <p>Mood</p>
+            <p>special?</p>
+            <p>expectations?</p>
+            <p>fulfillt?</p>
           </div>
         </div>
       </li>

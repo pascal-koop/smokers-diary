@@ -21,8 +21,7 @@ body {
   color: #ffffff;
   background-image: url("assets/Background Waves.png");
   background-repeat: repeat;
-  background-position: center;
-  background-size: cover;
+
   margin: 1rem 0;
 }
 

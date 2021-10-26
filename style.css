@@ -20,7 +20,7 @@ body {
   font-weight: 600;
   color: #ffffff;
   background-image: url("assets/Background Waves.png");
-  background-repeat: repeat-y;
+  background-repeat: repeat;
   margin: 1rem 0;
 }
 

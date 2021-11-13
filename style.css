@@ -77,7 +77,15 @@ form {
   align-items: flex-start;
   font-size: 1rem;
 }
-input#apply {
+#apply {
+  background: var(--background-clr);
+  border-radius: 5px;
+  backdrop-filter: var(--backdrop);
+  -webkit-backdrop-filter: blur(40px);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  background-clip: var(--background-clip);
+  color: #ffffff;
   margin-top: 1rem;
   padding: 0.2em 2em;
   font-size: 0.9rem;
@@ -86,6 +94,7 @@ input#apply {
     rgba(0, 231, 51, 0.51) 2.63%,
     rgba(239, 239, 239, 0.1) 95.54%
   );
+  border-radius: 5px;
   border-right: 2px;
   border-left: 1px;
 }

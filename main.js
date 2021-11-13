@@ -49,3 +49,8 @@ window.addEventListener("DOMContentLoaded", event => {
 //            (the height of an element's content) AND
 
 //            Set the content variable's aria-hidden attribute to false.
+
+document.getElementById("apply").onclick = () => {
+  let dateTime = document.getElementById("date").value;
+  console.log(`Das Datum ist der: ` + dateTime);
+};

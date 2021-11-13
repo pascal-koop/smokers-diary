@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
 
-    <script src="main.js"></script>
     <title>A Smokers Diary</title>
   </head>
   <body>
@@ -19,7 +18,7 @@
       <div class="glass-form">
         <form>
           <label for="date">what time is it?</label>
-          <input type="datetime-local" name="date" id="date" />
+          <input type="text" name="date" id="date" />
           <label for="situation">what kind of situation are you in?</label>
           <input type="text" name="situation" id="situation" />
           <label for="mood">how's your mood?<span>1 - 10(best)</span></label
@@ -30,9 +29,8 @@
           <input type="text" name="expectations" id="expectations" />
           <label for="fulfillt">expectations fulfilled?</label>
           <input type="text" name="fulfillt" id="fulfillt" />
-
-          <input type="submit" name="apply" id="apply" value="apply" />
         </form>
+        <button type="button" id="apply">apply</button>
         <img
           class="callender"
           src="./assets/callender.png"
@@ -140,5 +138,6 @@
         </div>
       </li>
     </ul>
+    <script src="main.js"></script>
   </body>
 </html>

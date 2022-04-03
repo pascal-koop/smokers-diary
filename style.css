@@ -114,7 +114,10 @@ input {
   color: #ffffff;
   padding: 0.2em;
 }
-
+input::placeholder {
+  color: rgb(47, 47, 47);
+  font-size: 1rem;
+}
 #accordion {
   font-family: "Raleway", sans-serif;
   display: flex;

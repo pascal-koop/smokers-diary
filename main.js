@@ -50,31 +50,31 @@ window.addEventListener("DOMContentLoaded", event => {
 
 //            Set the content variable's aria-hidden attribute to false.
 
-document.getElementById("apply").onclick = () => {
-  let dateTime = document.getElementById("date").value;
-  let situation = document.getElementById("situation").value;
-  let mood = document.getElementById("mood").value;
-  let special = document.getElementById("special").value;
-  let expect = document.getElementById("expectations").value;
-  let fulfilled = document.getElementById("fulfilled").value;
+// document.getElementById("apply").onclick = () => {
+//   let dateTime = document.getElementById("date").value;
+//   let situation = document.getElementById("situation").value;
+//   let mood = document.getElementById("mood").value;
+//   let special = document.getElementById("special").value;
+//   let expect = document.getElementById("expectations").value;
+//   let fulfilled = document.getElementById("fulfilled").value;
 
-  console.log(
-    `Datum: ${dateTime}\n` +
-      `Situation: ${situation}\n` +
-      `stimmung: ${mood}\n` +
-      `besonderheiten?: ${special}\n` +
-      `Erwartungen: ${expect}\n` +
-      `wurden diese erfüllt?: ${fulfilled}`
-  );
-};
-datenSammeln();
-const datenSammeln = function () {
-  const mapper = new Map();
+//   console.log(
+//     `Datum: ${dateTime}\n` +
+//       `Situation: ${situation}\n` +
+//       `stimmung: ${mood}\n` +
+//       `besonderheiten?: ${special}\n` +
+//       `Erwartungen: ${expect}\n` +
+//       `wurden diese erfüllt?: ${fulfilled}`
+//   );
+// };
+// datenSammeln();
+// const datenSammeln = function () {
+//   const mapper = new Map();
 
-  mapper.set("datum", dateTime);
-  console.log(mapper);
-};
+//   mapper.set("datum", dateTime);
+//   console.log(mapper);
+// };
 
-const datenErfassen = {
-  datensammeln() {},
-};
+// const datenErfassen = {
+//   datensammeln() {},
+// };

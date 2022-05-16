@@ -49,34 +49,35 @@ window.addEventListener("DOMContentLoaded", event => {
 //            (the height of an element's content) AND
 
 //            Set the content variable's aria-hidden attribute to false.
+const entries = document.querySelector("#entries");
 
-// document.getElementById("apply").onclick = () => {
-//   let dateTime = document.getElementById("date").value;
-//   let situation = document.getElementById("situation").value;
-//   let mood = document.getElementById("mood").value;
-//   let special = document.getElementById("special").value;
-//   let expect = document.getElementById("expectations").value;
-//   let fulfilled = document.getElementById("fulfilled").value;
+// when I add new items in my form and submit it, the old entries in local-storage gets deleted
+let datas = [];
 
-//   console.log(
-//     `Datum: ${dateTime}\n` +
-//       `Situation: ${situation}\n` +
-//       `stimmung: ${mood}\n` +
-//       `besonderheiten?: ${special}\n` +
-//       `Erwartungen: ${expect}\n` +
-//       `wurden diese erfüllt?: ${fulfilled}`
-//   );
-// };
-// datenSammeln();
-// const datenSammeln = function () {
-//   const mapper = new Map();
+const addEntry = e => {
+  e.preventDefault();
+  let data = {
+    id: document.querySelector("#date").value,
+    situation: document.querySelector("#situation").value,
+    mood: document.querySelector("#mood").value,
+    special: document.querySelector("#special").value,
+    expectations: document.querySelector("#expectations").value,
+    fulfilled: document.querySelector("#fulfilled").value,
+  };
+  datas.push(data);
+  console.log(datas);
+  document.querySelector("form").reset();
+  localStorage.setItem("smokeEntries", JSON.stringify(datas));
+};
 
-//   mapper.set("datum", dateTime);
-//   console.log(mapper);
-// };
+let content;
 
-// const datenErfassen = {
-//   datensammeln() {},
-// };
+//get object and save in array variable
+//want to display it on a list in html separated in key value pairs
+const getEntriesFromLocalStorage = () => {
+  content = [JSON.parse(this.localStorage.getItem("smokeEntries"))];
+};
 
-const submit = document.querySelector("#submit");
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelector("#submit").addEventListener("click", addEntry);
+});

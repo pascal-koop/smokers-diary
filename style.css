@@ -77,7 +77,7 @@ form {
   align-items: flex-start;
   font-size: 1rem;
 }
-#apply {
+#submit {
   background: var(--background-clr);
   border-radius: 5px;
   backdrop-filter: var(--backdrop);

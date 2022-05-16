@@ -78,3 +78,5 @@ window.addEventListener("DOMContentLoaded", event => {
 // const datenErfassen = {
 //   datensammeln() {},
 // };
+
+const submit = document.querySelector("#submit");
